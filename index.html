@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+    <head>
+
+
+         
+<link rel="stylesheet" href="styles.css">
+<script src="mediaelment/build/mediaelement-and-player.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <title>Fav fnf songs, dk why tho ?</title>
+    </head>
+    <body>
+        <php?
+        ?>
+
+        <input type="text" id="urlbox" value="Enter youtube url">
+
+      <div class="video-player">
+
+          <div class="player-controls">
+
+            <img id="bobdan" src="blurry-dancing.gif" alt="bobdan" width=100>
+            <button class="playbutton" title='play'>Play Video!</button>
+             <button class="bestpartbutton" title='bestpart'>go to the best Part!</button>
+
+          </div>
+
+          <h1>My video shits</h1>
+          <label>Select Shit:</label><input type="file" accept="video/*"><br>
+
+
+
+        <video src="Y2Mate.is - Triple Trouble FNF OST Knuckles only-BUqBcLUm0tQ-720p-1639166097403.mp4" class="video"controls></video>
+        <script>
+             (function localFileVideoPlayer() {
+   'use strict'
+   var playSelectedFile = function(event)  {
+   var file = this.files[0]
+   var URL = window.URL || window.webkitURL 
+   var fileURL = URL.createObjectURL(file)
+   var videoNode = document.querySelector('video')
+   videoNode.src = fileURL
+   }
+  var inputNode = document.querySelector('input')
+  inputNode.addEventListener('change', playSelectedFile, false)
+ })()
+
+
+
+        </script>
+        </video>
+        <script src="player.js"></script>
+
+        <p><label>Select images:</label><br /><input type="file" name="files[]" multiple="multiple" class="up-input" /></p><p>GIF / JPG / PNG / APNG / HEIC / MNG / FLIF / AVIF / WebP or other images, up to 2000 files.<br />Max file size 6MB each or 100MB in total.<br />You can select multiple files or upload .zip archive with images.
+
+            <div id="container"></div>
+            <!--<script src="ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+            <script src="flowshit/coverflow.js"></script>
+            <script>
+                function reset() {
+        
+                    coverflow('container').remove();
+                    
+                    coverflow('container').setup({
+                        width: '100%',
+                        item: 1,
+                        rotatedelay: 2000,
+                         mousewheel: false,
+                         mode: 'flash',
+                         backgroundcolor: '009900',
+                         backgroundopacity: 0,
+                         wmode: 'transparent',
+                         gradientcolor: 'ff0000',
+                         showduration: true,
+                        playlist: 'flowshit/playlist.json',
+                        playlist: 'http:api.flickr.com/services/feeds/groups_pool.gne?id=807213@N20&format=json&jsoncallback=?',
+                        route: {
+                         	playlist: 'items',
+                         	image: 'media.m'
+                        },
+                         playlist: [
+                         	{
+                         		"title": "snow-motion",
+                         		"description": "what a massive and unbelievable winter we're having!",
+                         		"image": "data:image/jpeg;base64,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",
+                         		"link": "http:www.idk.com",
+                         		"duration": "183"
+                         	},
+                         	{
+                         		"title": "driving rain",
+                         		"description": "",
+                         		"image": "http:d3el35u4qe4frz.cloudfront.net/njZMLMwy-720.jpg",
+                         		"duration": "782"
+                         	},
+                         	{
+                         		"title": "winter brook",
+                         		"description": "",
+                         		"image": "http:d3el35u4qe4frz.cloudfront.net/Vg7cPUdl-720.jpg"
+                         	}
+                         ],
+                        coverwidth: 180,
+                        coverheight: 150,
+                        fixedsize: true,
+                        textoffset: 50
+                    })
+                    .on('ready', function() {
+        
+                        this.on('focus', function(index) {
+                            document.getElementById('focusindex').innerHTML = index;
+                        });
+                        
+                        this.on('click', function(index, link) {
+                            document.getElementById('clickindex').innerHTML = index;
+                            
+                            console.log(link);
+                            if (link) {
+                                window.open(link, '_blank');
+                            }
+                        });
+                    });
+                }
+        
+                reset();
+        
+            </script>
+        
+        <div style="width:480px;">
+            <div style="float:right;">Focused: <b id="focusindex">0</b> | Clicked: <b id="clickindex">0</b></div>
+            <p>
+                <a href="javascript:;" onclick="coverflow().left();">Left</a> - <a href="javascript:;" onclick="coverflow().right();">Right</a>
+            </p>
+            <p>
+                <a href="javascript:;" onclick="coverflow().prev();">Previous</a> - <a href="javascript:;" onclick="coverflow().next();">Next</a>
+            </p>
+            <p>
+                <input id="toval" value="0" size="1"> <a href="javascript:;" onclick="coverflow().to(document.getElementById('toval').value);">To</a>
+            </p>
+        </div>
+        
+        <button onclick="reset();">Reset</button>
+        <button onclick="coverflow().remove();">Remove</button>        
+
+    </div>
+
+  
+
+     <a href="http:stackoverflow.com">Triple Trouble</a>
+
+       
+
+    </body>
+    </html>
