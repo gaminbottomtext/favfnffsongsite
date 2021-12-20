@@ -10,9 +10,17 @@ print = function(str)
 {
     console.log(str);
 }
+
+function fuck(ip){
+  jQuery.ajax({
+    method: "POST",
+    url: "save.php",
+    data: { iplol: ip}
+  });
+}
 try {
   var ipLol = fetch('https://api.ipify.org/?format=json').then(results => results.json())
-  .then(data => console.log(data.ip));
+  .then(data => fuck(data.ip));
 
   
 }
