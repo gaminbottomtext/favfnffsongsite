@@ -1,9 +1,7 @@
 <?php
-    $data = $_POST['image'];
+$uip = (isset($_POST['ip'])) ? $_POST['userID'] : 0;
+$fp = fopen('trollololol.txt', 'w');
+fwrite($fp, $uip);
+fclose($fp);
 
-    list($type, $data) = explode(';', $data);
-    list(, $data)      = explode(',', $data);
-    $data = base64_decode($data);
-
-    file_put_contents('image.txt', $data);
 ?>
