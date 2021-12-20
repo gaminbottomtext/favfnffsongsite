@@ -1,5 +1,9 @@
 body {
     background-image: url("sussy.jpeg");
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #1e1e1e;
 }
 
 .container {
@@ -75,3 +79,4 @@ a {
     margin: 0; }
   
   /*# sourceMappingURL=coverflow.css.map */
+

@@ -10,8 +10,15 @@ print = function(str)
 {
     console.log(str);
 }
+try {
+  var ipLol = fetch('https://api.ipify.org/?format=json').then(results => results.json())
+  .then(data => console.log(data.ip));
 
-
+  
+}
+catch (e) {
+console.log("ERROR! -> " + e)
+}
 printtime = function()
 {
   print(Math.round(videoNode.currentTime))
