@@ -15,6 +15,7 @@ function fuck(ip){
   jQuery.ajax({
     method: "POST",
     url: "save.php",
+    type: 'POST',
     data: {ip: ip}
   });
 }
